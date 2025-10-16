@@ -25,8 +25,8 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'com.github.mlabalabala:xposed-javax:master-7c7c414b7a-1'
-    implementation 'com.github.mlabalabala:xposed-common:master-f41574fbdc-1'
+    implementation 'com.github.mlabalabala:xposed-javax:master-SNAPSHOT'
+    implementation 'com.github.mlabalabala:xposed-common:master-SNAPSHOT'
     implementation 'com.squareup.picasso:picasso:2.71828'
     implementation project(':core')
     implementation project(':ui')
