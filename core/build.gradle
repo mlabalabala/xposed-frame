@@ -37,9 +37,9 @@ afterEvaluate {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'com.github.sky-wei:xposed-common:1.2.0'
-    implementation 'com.github.sky-wei:xposed-javax:1.2.0'
+    implementation 'com.github.mlabalabala:xposed-common:master-f41574fbdc-1'
+    implementation 'com.github.mlabalabala:xposed-javax:master-7c7c414b7a-1'
     implementation project(':annotations')
-    compileOnly 'de.robv.android.xposed:api:82'
+    //compileOnly 'de.robv.android.xposed:api:82'
     compileOnly 'com.rover12421.AndroidHideApi:android:1.17'
 }
