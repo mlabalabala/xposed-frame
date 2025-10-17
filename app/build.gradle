@@ -24,14 +24,15 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(dir: 'libs', include: ['*.jar'], exclude: ['XposedBridgeAPI-82.jar'])
     implementation 'com.github.mlabalabala:xposed-javax:1.2.1'
     implementation 'com.github.mlabalabala:xposed-common:1.2.0'
     implementation 'com.squareup.picasso:picasso:2.71828'
     implementation project(':core')
     implementation project(':ui')
     implementation project(':annotations')
-    compileOnly 'de.robv.android.xposed:api:82'
+    compileOnly files('libs/XposedBridgeAPI-82.jar')
+    // compileOnly 'de.robv.android.xposed:api:82'
     compileOnly 'com.rover12421.AndroidHideApi:android:1.17'
     annotationProcessor project(":compiler")
     implementation 'androidx.appcompat:appcompat:1.0.2'
